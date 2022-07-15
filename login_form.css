@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.modal-contentXrysa{
+    position: relative;
+    background-color: #ebc7c7;
+    border: 1px solid #999999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px; /*<!-- HERE I AM!---*/
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(153, 104, 104, 0.5);
+    background-clip: padding-box;
+    outline: none;
+}
+.modal-dialogXrysa {
+    border: 50px !important;
+}
+
+.user_card {
+    height: 450px;
+    width: 350px;
+    margin-top: 150px;
+    margin-bottom: auto;
+    background: #abd2db;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(29, 12, 12, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+
+}
+
+.brand_logo_container {
+    position: relative;
+    height: 135px;
+    width: 135px;
+    top: -40px;
+    border-radius: 50%;
+    background: rgb(240, 239, 239);
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.brand_logo {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2px rgb(240, 239, 239);
+}
+
+.container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrap {
+    position: relative;
+    color: rgb(17, 69, 99); }
+    .login-wrap h3 {
+      font-weight: 300;
+      color: rgb(185, 71, 71); }
+    .login-wrap .social {
+      width: 100%; }
+      .login-wrap .social a {
+        width: 100%;
+        display: block;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        color: #000;
+        background: rgb(65, 32, 32); }
+        .login-wrap .social a:hover {
+          background: #000;
+          color: rgb(87, 21, 21);
+          border-color: #000; }
+
+
+.btn-primary {
+  background-color: rgb(17, 69, 99) !important;
+  border-color: rgb(13, 51, 73) !important;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: rgb(17, 69, 99) !important;
+  border-color: rgb(13, 51, 73) !important;
+}
+
+body{
+  background-color: red;
+}
+.rect1 {
+    z-index: 1;
+    stroke-dasharray: 197 509;
+    stroke-dashoffset: -729;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+   }
+   
+   .rect2 {
+    z-index: 1;
+    stroke-dasharray: 197 509;
+    stroke-dashoffset: -1058;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+   }
+
+
+/* .particle-network-animation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	background-color: #171717;
+  
+  &::before {
+    z-index: -2;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // background-image: url(http://web.frfr.me/dev/world-map-optimized.jpg);
+    background-image: url(https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=786a67dca1d8791d181bfd90b16240d9);
+    background-position: center center;
+  background-size: cover;
+    opacity: 0.2;
+  }
+}
+.glow {
+  z-index: -1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-image: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.025), transparent);
+}
+$duration: 25s;
+.glow-1 {
+  width: 150vw;
+  height: 150vh;
+  margin-top: -75vh;
+  margin-left: -75vw;
+  animation: glow-1-move $duration linear infinite both;
+}
+@keyframes glow-1-move {
+  from {
+    transform: translate(-100%, 100%);
+  }
+  to {
+    transform: translate(100%, -100%);
+  }
+}
+.glow-2 {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -50vh;
+  margin-left: -50vw;
+  animation: glow-2-move $duration linear $duration / 3 infinite both;
+}
+@keyframes glow-2-move {
+  from {
+    transform: translate(-100%, 0%);
+  }
+  to {
+    transform: translate(100%, 100%);
+  }
+}
+.glow-3 {
+  width: 120vw;
+  height: 120vh;
+  margin-top: -60vh;
+  margin-left: -60vw;
+  animation: glow-3-move $duration linear $duration / 3 * 2 infinite both;
+}
+@keyframes glow-3-move {
+  from {
+    transform: translate(100%, 100%);
+  }
+  to {
+    transform: translate(0%, -100%);
+  }
+} */
